@@ -35,6 +35,7 @@ module Guideline
       array << long_method_checker         if options[:long_method]         != false
       array << trailing_whitespace_checker if options[:trailing_whitespace] != false
       array << unused_method_checker       if options[:unused_method]       != false
+      array << kusakabe_checker            if options[:kusakabe]            != false
       array
     end
 
@@ -68,6 +69,10 @@ module Guideline
 
     def unused_method_checker
       UnusedMethodChecker.new
+    end
+
+    def kusakabe_checker
+      KusakabeChecker.new
     end
   end
 end

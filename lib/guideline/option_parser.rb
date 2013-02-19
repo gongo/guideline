@@ -10,6 +10,7 @@ module Guideline
       "--no-long-method",         "(default: false) check method height",
       "--no-trailing-whitespace", "(default: false) check trailing whitespace",
       "--no-unused-method",       "(default: false) check unused method",
+      "--no-kusakabe",            "(default: false) check HankakuKana",
       "--no-detail",              "(default: false) only render summary",
       "--abc-complexity=",        "(default:    15) threshold of ABC complexity",
       "--long-line=",             "(default:    80) threshold of long line",
